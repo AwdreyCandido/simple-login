@@ -117,7 +117,7 @@ const LoginForm = () => {
       <button
         type="submit"
         onClick={handleSubmit}
-        className="absolute md:flex w-[6rem] h-[6rem] sm:top-[50%] right-0 -translate-y-[50%] translate-x-[50%] justify-center items-center text-xl text-gray-300 font-bold bg-[#fa5e30] hover:bg-orange-700 outline outline-[.8rem] outline-gray-800 rounded-full duration-300"
+        className="absolute flex justify-center items-center md:flex w-[6rem] h-[6rem] sm:top-[50%] right-0 -translate-y-[50%] translate-x-[50%] text-xl text-gray-300 font-bold bg-[#fa5e30] hover:bg-orange-700 outline outline-[.8rem] outline-gray-800 rounded-full duration-300"
       >
         {isLoading ? (
           <Loading />

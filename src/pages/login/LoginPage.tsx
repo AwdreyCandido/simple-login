@@ -3,9 +3,9 @@ import LoginForm from "../../components/LoginForm";
 const LoginPage = () => {
   return (
     <div className="flex justify-center items-center w-[100vw] h-[100vh] bg-gray-800 font-dm">
-      <section className="flex flex-col sm:flex-row sm:w-[75vw] md:w-[65vw] lg:w-[55vw] xl:w-[40vw] bg-gray-800 gap-[1rem] rounded-[.2rem] relative">
-        <div className="flex sm:flex-col justify-center gap-8 items-center sm:pb-8 sm:w-[20rem] sm:h-[20rem] bg-[#475993] relative rounded-t-lg sm:rounded-t-none sm:rounded-l-lg">
-          <div className="max-w-[4rem] sm:max-w-[14rem] py-2 flex-1 bg-cover overflow-hidden cursor-pointer">
+      <section className="flex flex-col w-[70vw] sm:flex-row sm:w-[75vw] md:w-[65vw] lg:w-[55vw] xl:w-[40vw] bg-gray-800 gap-[1rem] rounded-[.2rem] relative">
+        <div className="flex sm:flex-col justify-center gap-8 items-center sm:pb-8 sm:w-[20rem] sm:h-[20rem] bg-[#475993] relative rounded-t-lg sm:rounded-t-none sm:rounded-l-lg cursor-pointer">
+          <div className="max-w-[4rem] sm:max-w-[14rem] py-2 flex-1 bg-cover overflow-hidden">
             <img
               draggable="false"
               className="max-w-[4rem] sm:max-w-[14rem] sm:-translate-x-[10%] select-none"
