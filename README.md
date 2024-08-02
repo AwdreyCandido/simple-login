@@ -12,7 +12,7 @@ E por fim verificaria se o problema ocorre em todos os navegadores ou é especí
 
 ### 2. Quais passos você seguiria para solucionar problemas de um usuário que enfrentasse um erro no envio de um formulário no site?
 
-Primeiro eu tentaria reproduzir o erro usando os mesmos passos que o usuário relatou. Isso envolve testar o formulário em diferentes navegadores, dispositivos e condições de rede. Verificaria os logs do no servidor e do navegador para identificar mensagens de erro específicas.
+R: Primeiro eu tentaria reproduzir o erro usando os mesmos passos que o usuário relatou. Isso envolve testar o formulário em diferentes navegadores, dispositivos e condições de rede. Verificaria os logs do no servidor e do navegador para identificar mensagens de erro específicas.
 
 Logo após eu iria me certificar de que todos os campos do formulário estão sendo validados corretamente tanto no front quanto no back e revisaria as regras de validação para garantir que estejam corretas e completas.
 
