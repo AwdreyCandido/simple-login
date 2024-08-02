@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# Respostas das Perguntas Técnicas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 1. Quais passos você seguiria para solucionar problemas de um site lento?
 
-Currently, two official plugins are available:
+R: Eu diria que p primeiro passo seria Identificar os principais elementos que afetam o desempenho, como grandes imagens, arquivos JavaScript e CSS, e fontes externas. A partir dessa primeira análise eu faria o seguinte:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Primeiro analisaria o código HTML, CSS e JavaScript em busca de scripts ineficientes, excesso de requisições, imagens não otimizadas, etc.
 
-## Expanding the ESLint configuration
+Também verificaria a configuração do servidor, como capacidade de processamento, memória RAM, armazenamento, e se a hospedagem é adequada para o tráfego do site.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+E por fim verificaria se o problema ocorre em todos os navegadores ou é específico de algum deles.
 
-- Configure the top-level `parserOptions` property like this:
+### 2. Quais passos você seguiria para solucionar problemas de um usuário que enfrentasse um erro no envio de um formulário no site?
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Primeiro eu tentaria reproduzir o erro usando os mesmos passos que o usuário relatou. Isso envolve testar o formulário em diferentes navegadores, dispositivos e condições de rede. Verificaria os logs do no servidor e do navegador para identificar mensagens de erro específicas.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Logo após eu iria me certificar de que todos os campos do formulário estão sendo validados corretamente tanto no front quanto no back e revisaria as regras de validação para garantir que estejam corretas e completas.
+
+E por fim implementaria mensagens de erro claras para ajudar o usuário a corrigir qualquer entrada inválida.
+
+### 3. Como desenvolvedor frontend, fale sobre sua experiência no que fazer e o que não fazer ao construir o codigo do site (seja para scripts frontend ou APIs) relacionada ao desempenho.
+
+R: Como todo o desenvolvimento de qualquer aplicação deve ser direcionado por convenções e boas práticas. Na minha experiência eu aprendi que:
+
+É importante seguir boas práticas de programação, como modularização e reutilização de código. Utilizar linters e formatadores para manter a consistência do código e evitar bugs.
+
+Dividir o código em partes menores que podem ser carregadas sob demanda. Utilizar ferramentas como Webpack para otimizar o bundling de arquivos e carregar apenas o necessário em cada página.
+
+Minimizar a profundidade e a complexidade do DOM para melhorar o desempenho do navegador.
+
+Implementar o carregamento apenas do que é necessário para o usuário naquela ação específica. Por exemplo, implementar paginação em tabelas e buscar os dados por página.
+
+#### E também temos práticas a serem evitadas como:
+
+Evitar incluir bibliotecas ou frameworks que não são estritamente necessários, pois eles podem aumentar o tamanho da página e diminuir o desempenho.
+
+Em APIs, consultas SQL ineficientes podem causar atrasos significativos. Otimizar consultas e usar indexação apropriada no banco de dados.
