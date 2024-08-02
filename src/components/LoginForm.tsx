@@ -91,7 +91,12 @@ const LoginForm = () => {
             }`}
           />
           {errors.username && (
-            <p className="text-red-700 text-2xl mt-2">{errors.username}</p>
+            <div className="flex items-top gap-2 mt-2">
+              <span className="material-symbols-outlined text-3xl text-red-700">
+                warning
+              </span>
+              <p className="text-red-700 text-xl mt-2">{errors.username}</p>
+            </div>
           )}
         </div>
         <div>
@@ -107,7 +112,12 @@ const LoginForm = () => {
             }`}
           />
           {errors.password && (
-            <p className="text-red-700 text-2xl mt-2">{errors.password}</p>
+            <div className="flex items-top gap-2 mt-2">
+              <span className="material-symbols-outlined text-3xl text-red-700">
+                warning
+              </span>
+              <p className="text-red-700 text-xl mt-2">{errors.password}</p>
+            </div>
           )}
         </div>
       </div>
